@@ -88,7 +88,7 @@ Las funcionalidades serán priorizadas de acuerdo con el valor que aporten al us
 Los wireframes permiten representar la estructura y distribución de los elementos antes de realizar el diseño visual definitivo.
 
 Los wireframes se encuentran en: 
-`wireframes`
+`/wireframes/`
 
 Se contemplan inicialmente:
 
