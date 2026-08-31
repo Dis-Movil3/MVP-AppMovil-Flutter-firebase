@@ -60,13 +60,7 @@ Las decisiones de diseño se fundamentarán en las necesidades identificadas dur
 
 ---
 
-## 5. Arquitectura de navegación
-
-La navegación inicial propuesta para el MVP será:
-
----
-
-## 6. Pantallas principales del MVP
+## 5. Pantallas principales del MVP
 
 Las pantallas consideradas inicialmente son:
 
@@ -83,7 +77,7 @@ Las funcionalidades serán priorizadas de acuerdo con el valor que aporten al us
 
 ---
 
-## 7. Wireframes
+## 6. Wireframes
 
 Los wireframes permiten representar la estructura y distribución de los elementos antes de realizar el diseño visual definitivo.
 
@@ -99,7 +93,7 @@ Se contemplan inicialmente:
 
 ---
 
-## 8. Guía de estilos
+## 7. Guía de estilos
 
 Las decisiones relacionadas con tipografía, colores, botones, campos de entrada, iconografía y otros componentes visuales se encuentran documentadas en: 
 
@@ -107,7 +101,7 @@ Las decisiones relacionadas con tipografía, colores, botones, campos de entrada
 
 ---
 
-## 9. Validación UX/U
+## 8. Validación UX/U
 
 El diseño será validado mediante pruebas con usuarios reales.
 
