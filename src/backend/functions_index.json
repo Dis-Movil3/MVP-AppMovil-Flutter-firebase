@@ -1,3 +1,6 @@
+## JavaScript
+## Este será el corazón del backend. Podemos crear una API HTTP sencilla y además una función para enviar notificaciones.
+
 const { onRequest } = require("firebase-functions/v2/https");
 const { onDocumentCreated } = require("firebase-functions/v2/firestore");
  
