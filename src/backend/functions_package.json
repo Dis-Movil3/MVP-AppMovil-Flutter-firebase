@@ -1,3 +1,5 @@
+## Aquí definimos las dependencias específicas de las Functions.
+
 {
   "name": "functions",
   "description": "Firebase Cloud Functions para el MVP móvil",
