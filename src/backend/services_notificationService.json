@@ -1,1 +1,22 @@
+## Aquí dejamos la lógica de notificaciones.
 
+const admin = require("firebase-admin");
+ 
+const messaging = admin.messaging();
+ 
+/**
+* Envía una notificación push a un dispositivo.
+*/
+async function sendPushNotification(token, title, body) {
+  return messaging.send({
+    token,
+    notification: {
+      title,
+      body
+    }
+  });
+}
+ 
+module.exports = {
+  sendPushNotification
+};
