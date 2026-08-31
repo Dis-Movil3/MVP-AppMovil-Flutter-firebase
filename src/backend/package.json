@@ -1,3 +1,6 @@
+## Aquí definimos las dependencias específicas de las Functions.
+
+
 {
   "name": "mobile-app-backend",
   "version": "1.0.0",
