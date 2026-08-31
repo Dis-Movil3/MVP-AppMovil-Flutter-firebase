@@ -1,1 +1,152 @@
+/** JavaScript
+* Este será el corazón del backend. Podemos crear una API HTTP sencilla y además una función para enviar notificaciones.*/
 
+
+const { onRequest } = require("firebase-functions/v2/https");
+const { onDocumentCreated } = require("firebase-functions/v2/firestore");
+ 
+const admin = require("firebase-admin");
+ 
+admin.initializeApp();
+ 
+const db = admin.firestore();
+const messaging = admin.messaging();
+ 
+/**
+* API principal del MVP.
+*
+* Endpoint:
+* GET /api
+*/
+exports.api = onRequest(async (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "API del MVP funcionando correctamente",
+    project: "Aplicación móvil multiplataforma",
+    technology: "Firebase Cloud Functions"
+  });
+});
+ 
+/**
+* Obtiene información de servicios.
+*
+* Endpoint:
+* GET /api/services
+*/
+exports.getServices = onRequest(async (req, res) => {
+  try {
+    const snapshot = await db
+      .collection("services")
+      .where("active", "==", true)
+      .get();
+ 
+    const services = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+ 
+    res.status(200).json({
+      success: true,
+      data: services
+    });
+  } catch (error) {
+    console.error("Error consultando servicios:", error);
+ 
+    res.status(500).json({
+      success: false,
+      message: "No fue posible consultar los servicios"
+    });
+  }
+});
+ 
+/**
+* Registra un token FCM para un usuario.
+*
+* Endpoint:
+* POST /api/devices
+*
+* Body:
+* {
+*   "userId": "ID_USUARIO",
+*   "token": "TOKEN_FCM"
+* }
+*/
+exports.registerDevice = onRequest(async (req, res) => {
+  try {
+    if (req.method !== "POST") {
+      return res.status(405).json({
+        success: false,
+        message: "Método no permitido"
+      });
+    }
+ 
+    const { userId, token } = req.body;
+ 
+    if (!userId || !token) {
+      return res.status(400).json({
+        success: false,
+        message: "userId y token son obligatorios"
+      });
+    }
+ 
+    await db.collection("devices").doc(userId).set({
+      token,
+      updatedAt: admin.firestore.FieldValue.serverTimestamp()
+    });
+ 
+    return res.status(200).json({
+      success: true,
+      message: "Dispositivo registrado correctamente"
+    });
+  } catch (error) {
+    console.error("Error registrando dispositivo:", error);
+ 
+    return res.status(500).json({
+      success: false,
+      message: "No fue posible registrar el dispositivo"
+    });
+  }
+});
+ 
+/**
+* Cuando se crea una notificación en Firestore,
+* se envía automáticamente mediante Firebase Cloud Messaging.
+*
+* Colección:
+* notifications/{notificationId}
+*/
+exports.sendNotification = onDocumentCreated(
+  "notifications/{notificationId}",
+  async (event) => {
+    const data = event.data.data();
+ 
+    const { title, body, userId } = data;
+ 
+    if (!title || !body || !userId) {
+      console.log("Notificación incompleta.");
+      return;
+    }
+ 
+    const device = await db
+      .collection("devices")
+      .doc(userId)
+      .get();
+ 
+    if (!device.exists) {
+      console.log("El usuario no tiene un dispositivo registrado.");
+      return;
+    }
+ 
+    const token = device.data().token;
+ 
+    await messaging.send({
+      token,
+      notification: {
+        title,
+        body
+      }
+    });
+ 
+    console.log("Notificación enviada correctamente.");
+  }
+);
