@@ -1,1 +1,7 @@
+## Podemos dejar la configuración inicial: Firebase podrá solicitar índices adicionales si alguna consulta posterior los necesita.
 
+
+{
+  "indexes": [],
+  "fieldOverrides": []
+}
