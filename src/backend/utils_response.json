@@ -1,1 +1,21 @@
+## Para mantener respuestas API uniformes:
 
+function success(res, data = null, message = "Operación exitosa") {
+  return res.status(200).json({
+    success: true,
+    message,
+    data
+  });
+}
+ 
+function error(res, message = "Error interno del servidor", status = 500) {
+  return res.status(status).json({
+    success: false,
+    message
+  });
+}
+ 
+module.exports = {
+  success,
+  error
+};
