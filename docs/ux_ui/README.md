@@ -70,14 +70,14 @@ La navegación inicial propuesta para el MVP será:
 
 Las pantallas consideradas inicialmente son:
 
-Splash.
-Inicio de sesión.
-Registro.
-Recuperación de contraseña.
-Pantalla principal.
-Consulta del servicio.
-Notificaciones.
-Perfil de usuario.
+• Splash.
+• Inicio de sesión.
+• Registro.
+• Recuperación de contraseña.
+• Pantalla principal.
+• Consulta del servicio.
+• Notificaciones.
+• Perfil de usuario.
 
 Las funcionalidades serán priorizadas de acuerdo con el valor que aporten al usuario y con el alcance definido para el MVP.
 
@@ -92,10 +92,10 @@ Los wireframes se encuentran en:
 
 Se contemplan inicialmente:
 
-Login.
-Registro.
-Inicio.
-Navegación principal.
+• Login.
+• Registro.
+• Inicio.
+• Navegación principal.
 
 ---
 
@@ -113,12 +113,12 @@ El diseño será validado mediante pruebas con usuarios reales.
 
 Durante la validación se observarán aspectos como:
 
-Facilidad de navegación.
-Comprensión de los elementos.
-Cantidad de pasos necesarios para realizar una tarea.
-Claridad de los mensajes.
-Facilidad para encontrar información.
-Percepción general de la aplicación.
+• Facilidad de navegación.
+• Comprensión de los elementos.
+• Cantidad de pasos necesarios para realizar una tarea.
+• Claridad de los mensajes.
+• Facilidad para encontrar información.
+• Percepción general de la aplicación.
 
 Los resultados se utilizarán para realizar mejoras al MVP.
 
