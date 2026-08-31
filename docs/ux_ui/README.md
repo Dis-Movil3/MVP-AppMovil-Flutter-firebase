@@ -88,7 +88,7 @@ Las funcionalidades serán priorizadas de acuerdo con el valor que aporten al us
 Los wireframes permiten representar la estructura y distribución de los elementos antes de realizar el diseño visual definitivo.
 
 Los wireframes se encuentran en: 
-´/wireframes/´
+`wireframes`
 
 Se contemplan inicialmente:
 
@@ -103,7 +103,7 @@ Se contemplan inicialmente:
 
 Las decisiones relacionadas con tipografía, colores, botones, campos de entrada, iconografía y otros componentes visuales se encuentran documentadas en: 
 
-´guía_estilos.pdf´
+`guía_estilos.pdf`
 
 ---
 
