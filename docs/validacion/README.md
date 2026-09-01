@@ -44,79 +44,49 @@ La validación se realizará mediante dos enfoques complementarios:
 
 Permitirá observar la interacción de los usuarios con la aplicación y conocer su percepción sobre:
 
-Facilidad de uso.
-Navegación.
-Claridad de la interfaz.
-Comprensión de las funcionalidades.
-Experiencia general.
-Validación técnica
+• Facilidad de uso.
+• Navegación.
+• Claridad de la interfaz.
+• Comprensión de las funcionalidades.
+• Experiencia general.
+
+## Validación técnica
 
 Permitirá medir:
 
-Tiempo de carga.
-Tiempo de respuesta.
-Funcionamiento de las notificaciones.
-Comportamiento en diferentes dispositivos.
-Funcionamiento en Android e iOS.
+• Tiempo de carga.
+• Tiempo de respuesta.
+• Funcionamiento de las notificaciones.
+• Comportamiento en diferentes dispositivos.
+• Funcionamiento en Android.
 
 ---
 
-## 5. Funcionalidades principales
+## 5. Lean Mobile Development
 
-El MVP incluirá inicialmente:
+La validación forma parte del ciclo:
 
-1. Registro de usuarios.
-2. Inicio de sesión.
-3. Recuperación de contraseña.
-4. Pantalla principal.
-5. Navegación entre funcionalidades.
-6. Consulta de información.
-7. Recepción de notificaciones push.
-8. Gestión básica del perfil.
-9. Cierre de sesión.
+## Construir → Medir → Aprender → Mejorar.
 
-## 6. Tecnologías
+Los resultados obtenidos no se utilizarán únicamente para determinar si se alcanzaron los objetivos, sino también para identificar oportunidades de mejora.
 
-Flutter	- Desarrollo multiplataforma
-Dart	- Lenguaje de programación
-Firebase Authentication	- Autenticación
-Cloud Firestore	- Almacenamiento de información
-Firebase Cloud Messaging	- Notificaciones push
-GitHub	- Control de versiones y documentación
+## 6. Evidencias
+
+Las evidencias de esta etapa podrán incluir:
+
+• Capturas de pantalla.
+• Fotografías de pruebas en dispositivos.
+• Videos de funcionamiento.
+• Resultados de encuestas.
+• Resultados SUS.
+• Mediciones de rendimiento.
+• Registros de errores.
+• Comentarios de usuarios.
 
 ---
 
-## 7. Criterios de éxito
+## 7. Estado
 
-El MVP será evaluado teniendo en cuenta los objetivos establecidos para el proyecto:
+Estado: Validación pendiente de ejecución.
 
-## Rendimiento
-
-Tiempo de carga inferior a 1.5 segundos.
-
-## Usabilidad
-
-Puntuación SUS superior a 85 puntos.
-
-## Compatibilidad
-
-Funcionamiento en dispositivos:
-
-Android.
-
-## Notificaciones
-
-Recepción de notificaciones push en tiempo real.
-
-Los resultados serán registrados durante la etapa de validación.
-
----
-
-## 8. Alcance inicial
-
-El MVP se concentrará exclusivamente en las funcionalidades necesarias para validar la solución propuesta.
-
-Las funcionalidades secundarias o de mayor complejidad podrán desarrollarse en iteraciones posteriores si los usuarios manifiestan que aportan valor.
-
----
-
+Los resultados serán incorporados después de realizar las pruebas correspondientes.
