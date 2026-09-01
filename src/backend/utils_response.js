@@ -1,4 +1,4 @@
-## Para mantener respuestas API uniformes:
+// Para mantener respuestas API uniformes:
 
 function success(res, data = null, message = "Operación exitosa") {
   return res.status(200).json({
