@@ -68,7 +68,7 @@ GitHub	- Control de versiones y documentación
 
 ---
 
-## 6. Criterios de éxito
+## 7. Criterios de éxito
 
 El MVP será evaluado teniendo en cuenta los objetivos establecidos para el proyecto:
 
@@ -94,7 +94,7 @@ Los resultados serán registrados durante la etapa de validación.
 
 ---
 
-## 7. Alcance inicial
+## 8. Alcance inicial
 
 El MVP se concentrará exclusivamente en las funcionalidades necesarias para validar la solución propuesta.
 
@@ -102,7 +102,7 @@ Las funcionalidades secundarias o de mayor complejidad podrán desarrollarse en 
 
 ---
 
-## 8. Funcionalidades fuera del MVP
+## 9. Funcionalidades fuera del MVP
 
 Inicialmente no se priorizarán características como:
 
@@ -116,7 +116,7 @@ Estas funcionalidades podrán evaluarse después de la validación.
 
 ---
 
-## 9. Estado
+## 10. Estado
 
 Estado actual: Definición del MVP.
 
