@@ -1,4 +1,4 @@
-## Podemos separar la lógica de Firestore:
+// Podemos separar la lógica de Firestore:
 
 
 const admin = require("firebase-admin");
