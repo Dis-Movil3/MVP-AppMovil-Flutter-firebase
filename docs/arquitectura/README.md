@@ -23,7 +23,7 @@ La arquitectura también deberá contribuir al objetivo de alcanzar tiempos de c
 ## 3. Tecnologías seleccionadas
 
 Flutter -	Desarrollo de la aplicación móvil multiplataforma
-Dart - Lenguaje de programación utilizado por Flutter
+Java Script - Lenguaje de programación utilizado por Flutter
 Firebase Authentication	- Gestión de autenticación de usuarios
 Cloud Firestore	- Almacenamiento de información
 Firebase Cloud Messaging	- Envío de notificaciones push
