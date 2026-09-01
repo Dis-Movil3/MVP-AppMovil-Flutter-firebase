@@ -1,4 +1,4 @@
-# 📱 MVP Aplicación Móvil – Flutter + Firebase
+# MVP Aplicación Móvil – Flutter + Firebase
 
 ## 1. Descripción del proyecto
 
@@ -140,8 +140,7 @@ El MVP corresponde a la primera versión funcional de la aplicación que contien
 - Integración con Firebase.
 - Notificaciones push en tiempo real.
 - Manejo básico de errores.
-- Diseño adaptable para Android e iOS.
-
+- Diseño adaptable para Android
 Las funcionalidades adicionales serán consideradas únicamente después de analizar los resultados obtenidos durante la validación del MVP.
 
 ---
@@ -247,7 +246,7 @@ La solución utilizará una arquitectura basada en una aplicación móvil desarr
 
 Los diagramas completos de arquitectura se encuentran en:
 
-`docs/03_arquitectura/`
+`docs/arquitectura/`
 
 ---
 
@@ -259,13 +258,12 @@ mvp-app-movil-flutter-firebase/
 ├── README.md
 │
 ├── docs/
-│   ├── 01_investigacion_usuario/
-│   ├── 02_ux_ui/
-│   ├── 03_arquitectura/
-│   ├── 04_mvp/
-│   ├── 05_validacion/
-│   ├── 06_evidencias/
-│   └── 07_presentacion/
+│   ├── investigacion_usuario/
+│   ├── ux_ui/
+│   ├── arquitectura/
+│   ├── mvp/
+│   ├── evidencias/
+│   └── presentacion/
 │
 ├── src/
 ├── test/
@@ -316,42 +314,22 @@ Se utilizará la escala **System Usability Scale (SUS)** para medir la percepci�
 
 Los valores obtenidos durante las pruebas serán documentados en:
 
-`docs/05_validacion/`
+`docs/validacion/`
 
 ---
 
-## 13. Evidencias
 
-Las evidencias del desarrollo y validación estarán disponibles en:
-
-`docs/06_evidencias/`
-
-Se incluirán:
-
-- Investigación de usuarios.
-- Prototipos UX/UI.
-- Evolución del MVP.
-- Capturas de la aplicación.
-- Integración con Firebase.
-- Notificaciones push.
-- Pruebas en dispositivos reales.
-- Mediciones de rendimiento.
-- Resultados de SUS.
-- Mejoras implementadas después de la validación.
-
----
-
-## 14. Presentación del proyecto
+## 13. Presentación del proyecto
 
 La presentación utilizada para exponer el proyecto se encuentra en:
 
-`docs/07_presentacion/`
+`docs/presentacion/`
 
-Esta carpeta contendrá la presentación final en formatos PDF y/o PowerPoint.
+Esta carpeta contendrá la presentación final en formato PowerPoint.
 
 ---
 
-## 15. Control de versiones
+## 14. Control de versiones
 
 Git será utilizado para registrar la evolución del proyecto mediante commits.
 
@@ -372,7 +350,7 @@ docs: actualizar evidencias del MVP
 
 ---
 
-## 16. Resultados esperados
+## 15. Resultados esperados
 
 Al finalizar el proyecto se espera obtener una aplicación móvil multiplataforma funcional que:
 
@@ -387,24 +365,24 @@ Al finalizar el proyecto se espera obtener una aplicación móvil multiplataform
 
 ---
 
-## 17. Estado del proyecto
+## 16. Estado del proyecto
 
-🚧 **En desarrollo – MVP**
+**En desarrollo – MVP**
 
 El proyecto se encuentra en proceso de investigación, diseño, construcción y validación mediante ciclos iterativos de Lean Mobile Development.
 
 ---
 
-## 18. Autores
+## 17. Autores
 
 **Integrantes:**
 
-- Nombre del integrante 1
-- Nombre del integrante 2
-- Nombre del integrante 3
+- Melary Sanchez Peña
+- Valentina Valencia Acevedo
+- Yojan Gonzalez Mazo
 
 **Asignatura:** Desarrollo de Aplicaciones para Móviles
 
 **Metodología:** Lean Mobile Development
 
-**Tecnologías principales:** Flutter + Firebase
+**Tecnologías principales:** Flutter + Firebase + JavaScript
