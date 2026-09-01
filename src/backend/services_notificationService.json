@@ -1,4 +1,4 @@
-## Aquí dejamos la lógica de notificaciones.
+// Aquí dejamos la lógica de notificaciones.
 
 const admin = require("firebase-admin");
  
